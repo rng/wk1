@@ -1,21 +1,188 @@
 html {
   background-color: #E61F0D;
+  font-family: 'Source Code Pro', monospace;
 }
+
+body {
+  margin: 0;
+  background-color: #E61F0D;
+  width: 5050px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+h1 {
+  background-color: #ffffff;
+  color: #E61F0D;
+  font-size: 100px;
+  width: 500px;
+  margin: 0;
+  padding: 5px;
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 28%;
+  left: 25%;
+}
+
+p {
+  top: 600px;
+  font-size: 25px;
+  color: #E61F0D;
+  position: absolute;
+  background-color: #ffffff;
+  width: 1200px;
+  transform: rotate(-0.5deg);
+}
+
+/* Flex divs not really being utilized right now */
 
 .flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 5000px;
 }
 
 .flex-container>div {
-  background-color: #E61F0D;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  line-height: 0.85em;
+  /* height: 120vh; */
+  /* line-height: 0.55em; */
   color: #ffffff;
-  font-size: 270px;
-  font-family: 'Source Code Pro', monospace;
-  vertical-align: middle;
+  font-size: 250px;
+  padding-bottom: 150px;
+}
+
+/* Placeholder divs for media */
+
+.flex-holder {
+  height: 650px;
+  width: 650px;
+  background-color: #ffffff;
+}
+
+/* Divs for the artists names */
+
+.names {
+  height: 650px;
+  width: 650px;
+  text-align: center;
+  cursor: default;
+  line-height: 0.8em;
+}
+
+/* The Jasper Johns entire painting */
+
+.vertical-painting {
+  width: 600px;
+  height: 650px;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 100px;
+  left: 100px;
+}
+
+/* For the background colors and text colors of the Jasper Johns painting */
+
+.purple {
+  background-color: #9a3fa8;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  letter-spacing: normal;
+  writing-mode: horizontal-tb;
+}
+
+.purple:hover {
+  background-color: #28ab49;
+}
+
+.blue {
+  background-color: #356daf;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  letter-spacing: normal;
+  writing-mode: horizontal-tb;
+}
+
+.blue:hover {
+  background-color: #f581e9;
+}
+
+.orange {
+  background-color: #eb9938;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  letter-spacing: normal;
+  writing-mode: horizontal-tb;
+}
+
+.orange:hover {
+  background-color: #9a3fa8;
+}
+
+.pink {
+  background-color: #f581e9;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  letter-spacing: normal;
+  writing-mode: horizontal-tb;
+}
+
+.pink:hover {
+  background-color: #eb9938;
+}
+
+.teal {
+  background-color: #28ab93;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  letter-spacing: normal;
+  writing-mode: horizontal-tb;
+}
+
+.teal:hover {
+  background-color: #356daf;
+}
+
+.green {
+  background-color: #28ab49;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  letter-spacing: normal;
+  writing-mode: horizontal-tb;
+}
+
+.green:hover {
+  background-color: #28ab93;
+}
+
+.g {
+  color: #28ab49;
+  font-size: 90px;
+}
+
+.pr {
+  color: #9a3fa8;
+  font-size: 90px;
+}
+
+.p {
+  color: #f581e9;
+  font-size: 90px;
+}
+
+.o {
+  color: #eb9938;
+  font-size: 90px;
+}
+
+.b {
+  color: #356daf;
+  font-size: 90px;
 }
