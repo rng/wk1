@@ -1,0 +1,3 @@
+function myFunction() {
+  introJs().start();
+}
